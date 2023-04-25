@@ -5,10 +5,13 @@ def create_double_triple_txt():
         # for each line in integers.txt
         for line in file_int:
             integer = int(line)
-            # if integer is even, # write to double.txt the square of integer
+            # if integer is even, write to double.txt the square of integer
             if integer % 2 == 0:
                 square = integer ** 2
                 file_sqr.write(str(square) + "\n")
-# if integer is odd, #write to triple.txt the cube of integer
+            # if integer is odd, write to triple.txt the cube of integer
+            else:
+                cube = integer ** 3
+                file_cube.write(str(cube) + "\n")
 # call the function/output
 create_double_triple_txt()
